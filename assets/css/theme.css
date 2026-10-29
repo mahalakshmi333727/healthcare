@@ -1,0 +1,98 @@
+/* ==========================================================
+   THEME TOKENS (light default, dark via [data-theme="dark"])
+   Palette taken from the Venkateswara Diagnostic Centre reference:
+   deep navy blue (primary, "Better") + brand red (secondary,
+   "Prevention is" / "than cure"), on white and light blue-grey surfaces
+   ========================================================== */
+:root {
+  /* Surfaces */
+  --background: #f6f8fd;
+  --surface: #ffffff;
+  --surface-secondary: #edf1f9;   /* alternate section tint */
+  --surface-warm: #e5ebf7;        /* soft blue tint, used sparingly */
+  --border: #d9e0ef;
+  --border-strong: #aeb9d6;
+  --field-border: #6f7da6;       /* form control outline, 3:1 against the page */
+  /* Text */
+  --text-primary: #1a2347;
+  --text-secondary: #55607e;
+  /* Brand */
+  --accent: #293f80;              /* reference navy ("Better"): headings, buttons, links */
+  --accent-hover: #1d2f63;
+  --on-accent: #ffffff;
+  --accent-secondary: #d92738;    /* reference red: accents, secondary buttons, marks */
+  --accent-secondary-hover: #bc1f2f;
+  --accent-soft: #cfd8ee;         /* soft navy wash for large decorative shapes */
+  --red-soft: #f9dde0;            /* soft red wash for decorative offsets */
+  --red-text: #c8202f;            /* red dark enough for small text on light surfaces */
+  --on-secondary: #ffffff;
+  --accent-text: #293f80;         /* navy for text on light */
+  /* Deep medical-blue bands (hero strip, philosophy, footer, contact panel) */
+  --band-1: #293f80;
+  --band-2: #1f3269;
+  --on-band: #ffffff;
+  --on-band-soft: rgba(255, 255, 255, .84);
+  --on-band-accent: #ff9aa3;      /* light red that stays readable as text on navy bands */
+  --red-on-band: #f0404f;         /* vivid red for decorative marks on navy bands */
+  --band-line: rgba(255, 255, 255, .18);
+  --header-bg: rgba(255, 255, 255, 0.92);
+  --whatsapp: #187a42;
+  --overlay: rgba(14, 20, 48, .5);
+  --focus-ring: rgba(41, 63, 128, .22);
+  --success: #3ba776;
+  /* Elevation */
+  --shadow: 0 1px 2px rgba(27, 37, 80, .05), 0 6px 18px rgba(27, 37, 80, .06);
+  --shadow-lg: 0 2px 4px rgba(27, 37, 80, .06), 0 14px 34px rgba(27, 37, 80, .1);
+  --shadow-header: 0 6px 20px rgba(27, 37, 80, .06);
+  --shadow-nav: 0 -8px 24px rgba(27, 37, 80, .07);
+  /* Shape and spacing */
+  --radius: 14px;
+  --radius-lg: 28px;
+  --space-1: .5rem; --space-2: .75rem; --space-3: 1rem; --space-4: 1.5rem; --space-5: 2.5rem; --space-6: 4rem;
+  --section-y: clamp(3.5rem, 8vw, 6.5rem);
+  /* Typography */
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", "Noto Serif", Georgia, serif;
+  --font-body: "Avenir Next", "Segoe UI", system-ui, -apple-system, Roboto, "Noto Sans", Arial, sans-serif;
+  /* Placeholder photography: tones images into the healthcare palette. */
+  --img-tone: #d9e0f0;
+  --img-filter: none;
+  --img-blend: normal;
+  color-scheme: light;
+}
+/* Dark theme: same navy + red identity, lightened so text keeps its contrast */
+:root[data-theme="dark"] {
+  --background: #0e1428;
+  --surface: #151d38;
+  --surface-secondary: #1b2545;
+  --surface-warm: #1a2442;
+  --border: #2a3660;
+  --border-strong: #44538a;
+  --field-border: #7f8fc0;
+  --text-primary: #eaeefa;
+  --text-secondary: #b0bbd8;
+  --accent: #8da2e8;
+  --accent-hover: #aebcf0;
+  --on-accent: #0b1330;
+  --accent-secondary: #f94b5b;
+  --accent-secondary-hover: #ff6f7c;
+  --accent-soft: #26335f;
+  --red-soft: #4a1b2c;
+  --red-text: #ff8a95;
+  --on-secondary: #1a0306;
+  --accent-text: #a9b9f0;
+  --band-1: #1b2a5c;
+  --band-2: #141f47;
+  --on-band-accent: #ff9aa3;
+  --red-on-band: #f0404f;
+  --header-bg: rgba(14, 20, 40, 0.92);
+  --whatsapp: #1f9d55;
+  --overlay: rgba(4, 7, 20, .65);
+  --focus-ring: rgba(141, 162, 232, .3);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .35);
+  --shadow-lg: 0 2px 4px rgba(0, 0, 0, .35), 0 18px 44px rgba(0, 0, 0, .5);
+  --shadow-header: 0 6px 20px rgba(0, 0, 0, .3);
+  --shadow-nav: 0 -8px 24px rgba(0, 0, 0, .35);
+  --img-tone: #4a5b92;
+  --img-filter: none;
+  color-scheme: dark;
+}
